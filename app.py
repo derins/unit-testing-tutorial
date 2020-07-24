@@ -25,8 +25,8 @@ def get_dog_info():
         # time_of_day = get_time_of_day()
 
         # testable and reuseable code example and more
-        time_of_day = get_time_of_day(datetime.datetime.now().time())
-        drop_off_time = get_time_of_day(datetime.datetime.strptime(scheduled_time, '%Y-%m-%dT%H:%M'))
+        time_of_day = get_time_of_day(datetime.now().time())
+        drop_off_time = get_time_of_day(datetime.strptime(scheduled_time, '%Y-%m-%dT%H:%M'))
 
     # needed for bad example to work
     # return render_template('schedule.html', name = name, time = scheduled_time, color = color, time_of_day = time_of_day)
