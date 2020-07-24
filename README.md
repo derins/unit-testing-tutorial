@@ -1,24 +1,19 @@
-### Creating the env - ensure you are running the anaconda `4.5.x +`
+##Unit Testing Tutorial
+### Run Flask
 ```
-conda env create -f environment_unit_test.yml
-```
-
-### Updating the env after adding new packages
-```
-conda env update -f environment_unit_test.yml
+python3 app.py
 ```
 
-### Starting the env
+### Running Tests
 ```
-conda activate unit_test_env
-```
-
-### Stopping the env
-```
-conda deactivate
+python3 unit_tests.py
 ```
 
-### Running Locally - ensure you are using python `3.x +`
-```
-python app.py
-```
+#### In the repo exists testable and untestable code with corresponding unit Tests
+
+### Bad example
+
+#### In app.py - uncomment line 25 and 32, and comment out lines 28-29
+#### In unit_tests.py - uncomment lines 8-16 (change either the system settings or the expected test output to current time for the test to pass) and comment out lines 24-52
+#### In time_of_day.py - uncomment lines 3-16 and comment out lines 18-31
+#### In templates/schedule - uncomment line 7 and comment out line 8 (more for reusable code example)
