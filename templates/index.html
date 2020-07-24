@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="jumbotron text-center">
+        <h1>Welcome to Unit Testing Tutorial</h1>
+        <p class="lead"></p>
+        <p class="lead"></p>
+        <p class="lead"><p>
+        <p class="lead"></p>
+
+        <form action="/schedule" method="post">
+            Name:<br />
+            <input type="text" name="name"><br />
+            Collar Color:<br />
+            <input type="text" name="color"><br />
+            Breed:<br />
+            <input type="text" name="breed"><br />
+            Time for Sitting:<br />
+            <input type="datetime-local" name="time"><br />
+            <br />
+            <input type="submit" value="submit">
+        </form>
+
+    </div>
+{% endblock %}
