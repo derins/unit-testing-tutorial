@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="jumbotron text-center">
+        <h1>Your Scheduled Time</h1>
+        <br>
+        <h2 class="lead">{{ name }} with {{ color }} collar is scheduled to be dropped of at {{ time }}</h2>
+        <h2 class="lead">Thank you for scheduling and have a good {{ time_of_day }}!</h2>
+
+    </div>
+{% endblock %}

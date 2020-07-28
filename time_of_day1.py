@@ -16,7 +16,7 @@ from datetime import datetime
 #     return 'Evening'
 
 
-def get_time_of_day(time):
+def get_time_of_day(time = datetime.now()):
     '''Returns time of day (morning, afternoon, night, evening)'''
 
     if time.hour >= 0 and time.hour < 6:

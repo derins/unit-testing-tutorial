@@ -1,5 +1,6 @@
 import unittest
-from time_of_day import *
+from time_of_day0 import *
+
 from datetime import datetime
 
 # Bad example of test to test poorly writtern testable code
@@ -7,13 +8,13 @@ from datetime import datetime
 
 # class Test(unittest.TestCase):
 #
-#     # Setup: change system time to 6AM
-#
 #     def test(self):
+#
+#         # Setup: change system time to 6AM
 #
 #         time_of_day = get_time_of_day()
 #
-#         self.assertEqual("Morning", time_of_day)
+#         self.assertEqual("Afternoon", time_of_day)
 
 
 
